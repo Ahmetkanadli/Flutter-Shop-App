@@ -5,6 +5,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_shop_app/common/values/colors.dart';
 import 'package:flutter_shop_app/pages/home/myHome.dart';
 
 
@@ -75,8 +76,8 @@ class _WelcomeState extends State<Welcome> {
                         dotsCount: 3,
                         mainAxisAlignment: MainAxisAlignment.center,
                         decorator: DotsDecorator(
-                            color: Colors.grey,
-                            activeColor: Colors.blue,
+                            color: AppColors.primaryThirdElementText,
+                            activeColor: AppColors.primaryElement,
                             size: const Size.square(8.0),
                             activeSize: const Size(20.0, 8.0),
                             activeShape: RoundedRectangleBorder(
@@ -110,7 +111,7 @@ class _WelcomeState extends State<Welcome> {
           child: Text(
             title,
             style: TextStyle(
-                color: Colors.black,
+                color: AppColors.primaryText,
                 fontSize: 24.sp,
                 fontWeight: FontWeight.normal),
           ),
@@ -121,7 +122,7 @@ class _WelcomeState extends State<Welcome> {
           child: Text(
             subTitle,
             style: TextStyle(
-                color: Colors.black.withOpacity(0.5),
+                color: AppColors.primarySecondaryElementText,
                 fontSize: 14.sp,
                 fontWeight: FontWeight.normal),
           ),
@@ -137,7 +138,7 @@ class _WelcomeState extends State<Welcome> {
             }
             else{
               Navigator.push(context, MaterialPageRoute(builder: (context)=>MyHomePage()));
-              Navigator.pushNamedAndRemoveUntil(context, "myHomePage", (route) => false);
+              Navigator.pushNamedAndRemoveUntil(context, "signIn", (route) => false);
             }
           },
           child: Container(
@@ -147,14 +148,14 @@ class _WelcomeState extends State<Welcome> {
             height: 50.h,
             alignment: Alignment.center,
             decoration: BoxDecoration(
-                color: Colors.blue,
+                color: AppColors.primaryElement,
                 borderRadius: BorderRadius.all(Radius.circular(15.w)),
-                boxShadow: [
+                boxShadow: const [
                   BoxShadow(
-                      color: Colors.grey.withOpacity(0.1),
+                      color: AppColors.primaryElement,
                       spreadRadius: 1,
                       blurRadius: 2,
-                      offset: const Offset(0, 1))
+                      offset: Offset(0, 1))
                 ]
             ),
             child: Text(

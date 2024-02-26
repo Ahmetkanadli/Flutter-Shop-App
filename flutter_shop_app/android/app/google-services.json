@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "328197861089",
+    "project_id": "flutter-shop-app-14e52",
+    "storage_bucket": "flutter-shop-app-14e52.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:328197861089:android:9347336b12744aa87c51a0",
+        "android_client_info": {
+          "package_name": "com.mobilemastermind.flutter_shop_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCknXTK9yV7PeO1B_AwVJN_3bbh6TPnD5s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

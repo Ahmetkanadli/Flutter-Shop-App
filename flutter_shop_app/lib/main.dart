@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_shop_app/common/values/colors.dart';
 import 'package:flutter_shop_app/firebase_options.dart';
 import 'package:flutter_shop_app/pages/bloc_privders.dart';
 import 'package:flutter_shop_app/pages/home/myHome.dart';
+import 'package:flutter_shop_app/pages/register/register.dart';
 import 'package:flutter_shop_app/pages/sign_in/bloc/singin_bloc.dart';
 import 'package:flutter_shop_app/pages/welcome/bloc/welcome_bloc.dart';
 import 'package:flutter_shop_app/pages/welcome/welcome.dart';
@@ -28,12 +30,17 @@ class MyApp extends StatelessWidget {
             debugShowCheckedModeBanner: false,
             theme: ThemeData(
                 appBarTheme: const AppBarTheme(
-                    elevation: 0, backgroundColor: Colors.white),
+                    elevation: 0, backgroundColor: Colors.white,
+                  iconTheme: IconThemeData(
+                    color: AppColors.primaryText
+                  )
+                ),
                 useMaterial3: true),
             home: Welcome(),
             routes: {
               "myHonePage": (context) => const MyHomePage(),
               "signIn": (context) => const SingIn(),
+              "register" : (context) => const Register()
             },
           ),
         ));

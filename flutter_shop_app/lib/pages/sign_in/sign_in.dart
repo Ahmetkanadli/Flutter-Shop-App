@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_shop_app/common_widgets.dart';
 import 'package:flutter_shop_app/pages/sign_in/bloc/sigin_states.dart';
 import 'package:flutter_shop_app/pages/sign_in/bloc/signin_events.dart';
 import 'package:flutter_shop_app/pages/sign_in/bloc/singin_bloc.dart';
 import 'package:flutter_shop_app/pages/sign_in/sign_in_controller.dart';
-import 'package:flutter_shop_app/pages/sign_in/widget/buildThirdPartyLogin.dart';
-import 'package:flutter_shop_app/pages/sign_in/widget/sign_in_widget.dart';
+
 
 class SingIn extends StatefulWidget {
   const SingIn({super.key});
@@ -24,7 +24,7 @@ class _SingInState extends State<SingIn> {
           color: Colors.white,
           child: SafeArea(
             child: Scaffold(
-              appBar: buildAppBar(),
+              appBar: buildAppBar("Log In"),
               body: SingleChildScrollView(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -64,7 +64,7 @@ class _SingInState extends State<SingIn> {
                     ),
                     buildLoginAndRegisterButton("Register","register",
                         (){
-                          print('tıklandı');
+                          Navigator.of(context).pushNamed("register");
                         }
 
                     )

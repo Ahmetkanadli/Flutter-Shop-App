@@ -5,6 +5,7 @@ import 'package:flutter_shop_app/common_widgets.dart';
 import 'package:flutter_shop_app/pages/register/bloc/register_bloc.dart';
 import 'package:flutter_shop_app/pages/register/bloc/register_event.dart';
 import 'package:flutter_shop_app/pages/register/bloc/register_states.dart';
+import 'package:flutter_shop_app/pages/register/register_controller.dart';
 
 class Register extends StatefulWidget {
   const Register({super.key});
@@ -73,6 +74,7 @@ class _RegisterState extends State<Register> {
                               Center(
                                 child: buildLoginAndRegisterButton(
                                     "Sign up", "login", () {
+                                  RegisterController(context: context).handleEmailRegister();
                                 }),
                               )
                             ],

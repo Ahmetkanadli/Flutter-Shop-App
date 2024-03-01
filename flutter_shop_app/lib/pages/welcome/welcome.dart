@@ -48,7 +48,7 @@ class _WelcomeState extends State<Welcome> {
                           context,
                           "next",
                           "First see Learning",
-                          "Forget about a for papaer all knowladge şn on learning",
+                          "Forget about a for papaer all knowladge in on learning",
                           "assets/images/reading.png"
                       ),
                       _page(
@@ -117,7 +117,7 @@ class _WelcomeState extends State<Welcome> {
           ),
         ),
         Container(
-          width: 345.h,
+          width: 375.h,
           padding: EdgeInsets.only(left: 30.w, right: 30.w),
           child: Text(
             subTitle,

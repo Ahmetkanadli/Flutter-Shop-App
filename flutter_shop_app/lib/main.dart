@@ -3,6 +3,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_shop_app/common/values/colors.dart';
 import 'package:flutter_shop_app/firebase_options.dart';
+import 'package:flutter_shop_app/pages/application/applicaiton_page.dart';
+import 'package:flutter_shop_app/pages/application/widgets/applicaition_widget.dart';
 import 'package:flutter_shop_app/pages/bloc_privders.dart';
 import 'package:flutter_shop_app/pages/home/myHome.dart';
 import 'package:flutter_shop_app/pages/register/register.dart';
@@ -36,7 +38,7 @@ class MyApp extends StatelessWidget {
                   )
                 ),
                 useMaterial3: true),
-            home: Welcome(),
+            home: ApplicationPage(),
             routes: {
               "myHonePage": (context) => const MyHomePage(),
               "signIn": (context) => const SingIn(),

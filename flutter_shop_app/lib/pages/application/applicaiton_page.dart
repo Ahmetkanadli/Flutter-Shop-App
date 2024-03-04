@@ -42,6 +42,7 @@ class _ApplicationPageState extends State<ApplicationPage> {
                       child: Image.asset("assets/icons/home.png"),
                     )
                 ),
+
                 BottomNavigationBarItem(
                     label: "search",
                     icon: SizedBox(
@@ -55,7 +56,7 @@ class _ApplicationPageState extends State<ApplicationPage> {
                     icon: SizedBox(
                       width: 15.w,
                       height: 15.w,
-                      child: Image.asset("assets/icons/search.png"),
+                      child: Image.asset("assets/icons/chat.png"),
                     )
                 ),
                 BottomNavigationBarItem(
@@ -63,7 +64,7 @@ class _ApplicationPageState extends State<ApplicationPage> {
                     icon: SizedBox(
                       width: 15.w,
                       height: 15.w,
-                      child: Image.asset("assets/icons/search.png"),
+                      child: Image.asset("assets/icons/profile.png"),
                     )
                 )
               ]

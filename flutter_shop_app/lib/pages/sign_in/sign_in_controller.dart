@@ -62,7 +62,7 @@ class SingInController {
         }
       }
     } catch (e) {
-      print(e.toString());
+      
     }
   }
 }
